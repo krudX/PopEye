@@ -267,8 +267,10 @@ header {
   height: 100%;
   width: 100%;
   top: 30%;
-  background: url(../assets/images/evan-krause-5cxIBFFpZEg-unsplash.jpg);
-  background-position: 50% 70%;
+  background: url(../assets/images/hoarding.jpeg);
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .info-section {
   margin-top: 13em;
@@ -320,9 +322,6 @@ header {
   .info-squares {
     width: 70%;
     margin: 0 auto;
-    // display: flex;
-    // justify-content: space-around;
-    // align-items: center;
     list-style: none;
     column-count: 6;
     .square {
@@ -348,16 +347,6 @@ header {
         padding: 0.5em;
         height: 4em;
         position: relative;
-      }
-      .icon::before {
-        content: "";
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        height: 100%;
-        width: 100%;
-        border-radius: 50%;
-        background-color: #a8cf45;
       }
       h5 {
         z-index: 10;
@@ -518,6 +507,9 @@ header {
           border: none;
           box-shadow: 0 0 10px inset #a8cf45;
         }
+        textarea::placeholder {
+          font-size: 1.2em;
+        }
         button {
           padding: 0.5em 2em;
           background-color: #a8cf45;
@@ -569,9 +561,12 @@ footer {
   }
 }
 .header-title {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../assets/images/evan-krause-5cxIBFFpZEg-unsplash.jpg");
-  background-position: 50% 70%;
+  background: url("../assets/images/sanket-shah-F_3qCaaSadc-unsplash.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-blend-mode: overlay;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 10em;
   position: relative;
   h3 {
@@ -667,7 +662,7 @@ footer {
             outline: none;
           }
           input::placeholder {
-            font-size: 1.2em;
+            font-size: 1em;
           }
           textarea {
             width: 100%;
@@ -675,6 +670,10 @@ footer {
             border-radius: 5px;
             border: 1px solid #ced4da;
             font-size: 1.2em;
+            font-family: 'Montserrat', sans-serif;
+          }
+          textarea::placeholder {
+            font-size: 1.3em;
           }
           button {
             padding: 0.5em 2em;
@@ -1292,11 +1291,28 @@ footer {
       }
     }
   }
-  .carousel-caption {
-    h5 {
-      font-size: 1em !important;
+  .carousel {
+    .carousel-item {
+      .carousel-caption {
+        h5 {
+          font-size: 0.5em !important;
+        }
+        .read-more {
+          font-size: 0.5em;
+          margin-top: 0.5em !important;
+          padding: 0.3em 0.5em;
+        }
+      }
+      .caption-1, .caption-3 {
+        left: 5%;
+        transform: translateY(-30%);
+      }
+      .caption-2, .caption-4 {
+        left: 73%;
+        transform: translateY(-30%);
+      }
     }
-  }
+  } 
   .section {
     .section-container {
       width: 90%;
@@ -1306,20 +1322,20 @@ footer {
     .cards {
       column-count: 1 !important;
       .card {
-        width: 25em;
+        width: 30em;
         margin-bottom: 4em;
         padding: 1em;
       }
     }
   }
   .services-section::before {
-    top: 15%;
+    top: 10%;
   }
   .info-section {
+    margin-top: 20em;
     .section-container {
       width: 80%;
     }
-    margin-top: 20em;
     .sub-section {
       .head-image {
         height: 25em;
@@ -1351,6 +1367,9 @@ footer {
         height: 15em;
         width: 15em;
         margin-bottom: 2em;
+        .border-box {
+          top: -20%;
+        }
         .icon {
           height: 4em;
         }
@@ -1396,10 +1415,21 @@ footer {
       width: 90%;
       .contact-info {
         flex-direction: column;
+        .ci-item {
+          .ci-icon {
+            height: 5em;
+          }
+        }
       }
       .feedback-form {
         form {
           width: 90%;
+          input::placeholder {
+            font-size: 1em;
+          }
+          textarea::placeholder {
+            font-size: 1.5em;
+          }
         }
       }
     }
@@ -1408,6 +1438,52 @@ footer {
     .section {
       .socials {
         width: 50%;
+      }
+    }
+  }
+  .content {
+    margin-top: 2em;
+    .section-container {
+      width: 90%;
+      margin: 0 auto;
+      .content-text {
+        p {
+          font-size: 1.2em;
+          font-weight: 300;
+          text-align: justify;
+          width: 95%;
+        }
+      }
+      .content-image {
+        text-align: center;
+        img {
+          height: 30em;
+          border: 0.5em solid #a8cf45;
+        }
+      }
+    }
+  }
+  .services-content {
+    .section-container {
+      width: 80%;
+      .row {
+        height: auto;
+        .content-text {
+          .service-desc {
+            .d-item {
+              width: 100%;
+            }
+          }
+        }
+        .content-image {
+          width: 80%;
+          margin: 0 auto;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
       }
     }
   }
