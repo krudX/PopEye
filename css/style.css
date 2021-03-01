@@ -818,6 +818,11 @@ footer ul li a:hover > i {
 .info .section-container .form .feedback-form h2 {
   color: #000;
   padding: 1em 0;
+  font-size: 1.5em;
+}
+
+.info .section-container .form .feedback-form h2 b {
+  font-size: 1.5em;
 }
 
 .info .section-container .form .feedback-form form {
@@ -827,6 +832,8 @@ footer ul li a:hover > i {
 .info .section-container .form .feedback-form form input {
   height: 3em;
   outline: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
 }
 
 .info .section-container .form .feedback-form form input::-webkit-input-placeholder {
@@ -850,24 +857,24 @@ footer ul li a:hover > i {
   padding: 0.7em;
   border-radius: 5px;
   border: 1px solid #ced4da;
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: 'Montserrat', sans-serif;
 }
 
 .info .section-container .form .feedback-form form textarea::-webkit-input-placeholder {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .info .section-container .form .feedback-form form textarea:-ms-input-placeholder {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .info .section-container .form .feedback-form form textarea::-ms-input-placeholder {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .info .section-container .form .feedback-form form textarea::placeholder {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .info .section-container .form .feedback-form form button {
@@ -917,6 +924,11 @@ footer ul li a:hover > i {
 .info .section-container .form .contact .contact-item h3 a {
   color: #000;
   text-decoration: none;
+}
+
+.info .section-container .google-map {
+  margin: 2em 0;
+  border: 1px solid #e8e8e8;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
